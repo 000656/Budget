@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <EditText android:id="@+id/editExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="المصروفات"
+            android:inputType="numberDecimal" />
+
+        <EditText android:id="@+id/editIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="الإيرادات"
+            android:inputType="numberDecimal" />
+
+        <EditText android:id="@+id/editDesc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="الوصف 1" />
+
+        <EditText android:id="@+id/editDesc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="الوصف 2" />
+
+        <Button android:id="@+id/btnDatePick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التاريخ" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button android:id="@+id/btnEnterData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ادخال" />
+
+            <Button android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رجوع"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <Button android:id="@+id/btnShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عرض"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
